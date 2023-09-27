@@ -222,6 +222,7 @@ height: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     margin: 0 20px;
+    overscroll-behavior-inline: contain;
 }
 
 .movie {
@@ -230,6 +231,15 @@ height: 100%;
     height: 154px;
     background-color: red;
  margin-right: 10px;
+}
+
+.scroll-snap{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem ;
+}
+
+.scroll-snap > *{
+    scroll-snap-align: start;
 }
 
 .categoryname{
@@ -245,14 +255,19 @@ height: 100%;
 
 @media (min-width: 1000px){
     .movie{
-        width: 130px;
-        min-width: 130px;
-        height: 185px;
+        width: 291px;
+        min-width: 291px;
+        height: 165px;
         background-color: red;
         margin-right: 15px;
+        border-radius: 5px;
     }
-
-  
+/* Detta är för när jag byter ut divs till bilder */
+  .moviescontainer > img{ 
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
 
     .categoryname{
         font-size: 2em;
