@@ -60,12 +60,17 @@
 
 
 @media (min-width: 1000px){
-
+html{
+    background-image: url("images/joker1920.png");
+    background-repeat: no-repeat;
+}
     hr{
         display: none;
     }
     .topnav{
         justify-content: space-between;
+        background: rgb(0,6,1);
+        background: linear-gradient(180deg, rgba(0,6,1,1) 30%, rgba(255,255,255,0) 100%); 
         border-bottom: 3px solid rgba(255,255,255,0.2);
     }
 
@@ -157,17 +162,41 @@ height: 100%;
 }
 
 @media (min-width: 1000px){
-
+#movieposter{
+    display: none;
+}
 }
 
+/* ----------------------- DESKTOP MOVIE INFO ----------------------- */
+
+
+
+#desktop-movie-title{
+    color: white;
+    background-color: orange;
+    font-size: 2em;
+}
+
+#desktop-movie-title ul li{
+    color: white;
+    font-size: 2em;
+    background-color: orange;
+}
+
+
+@media (max-width: 1000px){
+    #desktop-movie-info-container{
+        display:none;
+    }
+}
 /* ----------------------- MOVIE SCROLL ----------------------- */
 
 .moviecontainer {
     margin: 0 auto;
     height: fit-content;
-    overflow: scroll;
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     margin: 0 20px;
 }
 
@@ -188,4 +217,20 @@ height: 100%;
 
 .moviescontainer{
     margin: 20px 0;
+}
+
+@media (min-width: 1000px){
+    .movie{
+        width: 182px;
+        min-width: 182px;
+        height: 260px;
+        background-color: red;
+        margin-right: 10px;
+    }
+
+    .categoryname{
+        font-size: 2em;
+    }
+
+
 }
