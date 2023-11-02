@@ -1,4 +1,4 @@
-// TOP NAV BAR
+// ----------------- TOP NAV BAR  SEARCH BAR EXTENTION  WIDE VIEW------------------- 
 
 function searchExtention(){
     const element = document.getElementById('searchbar');
@@ -16,7 +16,30 @@ if(mediaQuery.matches){
 
 else{
     element.style.width = "100%";
+
+
 }
 
 
+}
+
+
+// ----------------- TOGGLE HAMBURGER BAR PHONE VIEW ------------------- 
+
+function closeMenu(){
+  
+    var elementTwo = document.getElementById("phone-hamburger-menu");
+    var firstIcon = document.querySelector("#phone-menu-button i:nth-child(1)");
+    var secondIcon = document.querySelector("#phone-menu-button i:nth-child(2)");
+    var style = getComputedStyle(elementTwo).display;
+    
+    if(style === "none"){
+      elementTwo.style.display = "block";
+      firstIcon.style.display = "none";
+      secondIcon.style.display = "block";
+    } else{
+      elementTwo.style.display = "none";
+      firstIcon.style.display = "block";
+      secondIcon.style.display = "none";
+    }    
 }

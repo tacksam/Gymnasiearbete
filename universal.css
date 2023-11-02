@@ -4,6 +4,9 @@
     border: 0;
 }
 
+button{
+    background-color: transparent;
+}
 
 :root {
     --whiteTransparentButton: rgba(120, 120, 120, 0.4);
@@ -17,4 +20,19 @@ hr {
     background-color: var(--linebreak);
     margin: 10px 0;
     height: 2px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h5{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 15px;
 }
