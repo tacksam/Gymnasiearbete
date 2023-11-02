@@ -26,7 +26,7 @@ html {
 }
 
 .box {
-    background-color: var(--button);
+    background-color: var(--whiteTransparentButton);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -118,7 +118,7 @@ html {
         flex-direction: column;
         position: absolute;
         right: 40px;
-        background-color: var(--widenavbarbutton);
+        background-color: var(--blackTransparentButton);
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
@@ -174,7 +174,7 @@ html {
 
 .category,
 #categories {
-    background-color: var(--button);
+    background-color: var(--whiteTransparentButton);
     color: var(--buttontext);
     width: 90px;
     height: 25px;
@@ -188,6 +188,12 @@ html {
     .botnav {
         display: none;
     }
+}
+
+/* ----------------------- PHONE VIEW HAMBURGER BAR ----------------------- */
+
+@media (max-width: 1000px) {
+
 }
 
 /* ----------------------- MOVIE POSTER ----------------------- */

@@ -2,12 +2,21 @@
 
 function searchExtention(){
     const element = document.getElementById('searchbar');
-    // const elementWidth = element.style.width;
-    const elementWidth = "0px"; 
+    const elementStartWidth = "0px"; 
 
-    if(element.style.width === elementWidth){
+    const mediaQuery = window.matchMedia('(min-width: 1000px)');
+
+if(mediaQuery.matches){
+    if(element.style.width === elementStartWidth){
         element.style.width = "200px"
     } else{
-        element.style.width = elementWidth;
+        element.style.width = elementStartWidth;
     }
+} 
+
+else{
+    element.style.width = "100%";
+}
+
+
 }
