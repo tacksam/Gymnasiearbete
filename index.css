@@ -98,22 +98,11 @@ html{
         font-size: 23px;
         color: white;
     }
-    .box input[type="text"]{
-        border: 1px solid #ccc;
-        outline: none;
-        background-size: 22px;
-        background-position: 13px;
-        border-radius: 10px;
-        width: 50px;
-        height: 50px;
-        padding: 25px;
-        transition: all 0.5s;
-    }
 
-      #search-button:hover .box input[type="text"]:hover{
-        width: 300px;
-        padding-left: 50px;
-      }
+    .box input[type="text"]{
+        transition: all 0.2s ease-in-out;
+        width: 0;
+    }
 
 
       .profile-dropdown-content {
