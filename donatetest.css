@@ -1,0 +1,38 @@
+nav{
+    width: 100vw;
+    height: 92px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchbar{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    width: 100%;
+    background-color: transparent;
+    color: var(--buttontext);
+    font-weight: 200;
+}
+
+i:not(#searchbarwrapper i){
+    font-size: 35px;
+    color: white;
+}
+
+#searchbarwrapper i{
+    color: rgba(153, 153, 153, 255);
+    font-size: 20px;
+}
+
+
+#searchbarwrapper{
+    margin-right: 15px;
+    display: flex;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: 65%;
+    background-color: var(--whiteTransparentButton);
+}

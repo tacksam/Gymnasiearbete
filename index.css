@@ -206,6 +206,10 @@ html {
 #phone-menu-button i:nth-child(1) {}
 
 @media (max-width: 1000px) {
+    #phone-menu-button{
+        display: none;
+    }
+
     #phone-hamburger-menu {
         display: none;
         position: absolute;
