@@ -192,3 +192,34 @@ font-size: 13px;
     height: 100px;
 }
 
+h2, main ul{
+    margin: 0 5px;
+}
+.moviepresentation-button-wrapper{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+margin: 0 10px;
+}
+
+.moviepresentation-button-wrapper button{
+    background-color: var(--whiteTransparentButton);
+    border-radius: 3px;
+
+}
+.moviepresentation-button-wrapper button:nth-child(1){
+    padding: 0 40px;
+}
+.moviepresentation-button-wrapper button:nth-child(2){
+    padding: 0 25px;
+}
+
+
+#phoneview-information-text{
+    margin: 5px 10px;
+}
+
+#phoneview-information-stars{
+    margin: 50px 10px;
+}
