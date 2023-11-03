@@ -1,0 +1,20 @@
+.box1 {
+    display: flex;
+
+    border: 2px whitesmoke solid;
+
+
+}
+
+/* .box {
+    margin: 500px 90px 0 50px;
+} */
+.inputwrapper {
+    margin: 9px 6px 0 30px;
+}
+
+.payment,
+.premium {
+    margin: 9px 6px 0 30px;
+    border: 3px rgb(201, 0, 194) solid;
+}
