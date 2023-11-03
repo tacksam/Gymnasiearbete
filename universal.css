@@ -1,22 +1,38 @@
-*{
-margin: 0 ;
-padding: 0;
-border: 0;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-html{
-    background-color: var(--background);
+button{
+    background-color: transparent;
 }
 
-:root{
-    --button:rgba(74, 67, 67, 1);
-    --buttontext: rgba(255,255,255,1);
+:root {
+    --whiteTransparentButton: rgba(120, 120, 120, 0.4);
+    --blackTransparentButton: rgba(4, 7, 11, 0.2);
+    --buttontext: rgba(255, 255, 255, 1);
     --background: rgba(40, 38, 38, 1);
     --linebreak: rgba(69, 67, 67, 0.2);
 }
 
-hr{
+hr {
     background-color: var(--linebreak);
-    margin:  10px 0;
+    margin: 10px 0;
     height: 2px;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+h5{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 15px;
 }

@@ -1,8 +1,13 @@
-
-
 /* ----------------------- TOP NAV BAR ----------------------- */
-.topnav{
-    background-color: var(--background);
+html {
+    background-image: url("/images/background.png");
+}
+
+#searchbar {
+    background-color: transparent;
+}
+
+.topnav {
     display: flex;
     justify-content: center;
     height: 92px;
@@ -11,41 +16,42 @@
     justify-content: space-around;
 }
 
-.topnav i:not(.box i){
+.topnav i:not(.box i) {
     font-size: 35px;
-	color: white;
+    color: white;
 }
 
-.box button{
+.box button {
     background-color: transparent;
 }
 
-.box{
-    background-color: var(--button);
-	display: flex;
-	align-items: center;
+.box {
+    background-color: var(--whiteTransparentButton);
+    display: flex;
+    align-items: center;
     justify-content: space-around;
     padding: 12px 20px;
     border-radius: 30px;
-    width: 50%;
+    width: 65%;
 }
-.box input[type="text"]{
+
+.box input[type="text"] {
     border: none;
     outline: none;
     background-color: inherit;
     width: 100%;
     color: var(--buttontext);
     font-weight: 200;
-    
+
 
 }
 
-.topnav ul{
+.topnav ul {
     display: flex;
     margin-left: 5%;
 }
 
-.topnav ul li{
+.topnav ul li {
     color: white;
     list-style-type: none;
     padding: 0 20px;
@@ -55,38 +61,43 @@
 
 
 
-.box i{
-    color: rgba(153,153,153,255);
+.box i {
+    color: rgba(153, 153, 153, 255);
     font-size: 20px;
 }
 
 
-@media (min-width: 1000px){
-html{
-    background-repeat: no-repeat;
-    background: url("images/joker1920.png"), rgba(2, 7, 11, 1), no-repeat;
-}
-    hr{
+@media (min-width: 1000px) {
+    html {
+        background-repeat: no-repeat;
+        background: url("images/joker1920.png"), rgba(2, 7, 11, 1), no-repeat;
+    }
+
+
+    hr {
         display: none;
     }
-    .topnav{
+
+    .topnav {
         justify-content: space-between;
-        background: rgb(0,6,1);
-        background: linear-gradient(180deg, rgba(0,6,1,1) 30%, rgba(255,255,255,0) 100%); 
-        border-bottom: 3px solid rgba(255,255,255,0.2);
+        background: rgb(0, 6, 1);
+        background: linear-gradient(180deg, rgba(0, 6, 1, 1) 30%, rgba(255, 255, 255, 0) 100%);
+        border-bottom: 3px solid rgba(255, 255, 255, 0.2);
         height: 60px;
     }
 
-    .topnav i:not(.box i){
-    display: none;
+    .topnav i:not(.box i) {
+        display: none;
     }
 
-    .box{
+    .box {
+        display: flex;
+        justify-content: end;
         background-color: transparent;
-        width: fit-content;
+        width: 360px;
     }
 
-    .box button{
+    .box button {
         margin: 10px;
         background-color: rgba(4, 7, 11, 0.2);
         height: 40px;
@@ -94,24 +105,58 @@ html{
         border-radius: 100%;
     }
 
-    .box button i{
+    .box button i {
         font-size: 23px;
         color: white;
     }
-    .box input[type="text"]{
+
+    .box input[type="text"] {
+        transition: all 0.2s ease-in-out;
+        width: 0;
+    }
+
+
+    .profile-dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 40px;
+        background-color: var(--blackTransparentButton);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        height: fit-content;
+    }
+
+    .profile-dropdown:hover .profile-dropdown-content {
+        display: flex;
+    }
+
+    .profile-dropdown-content ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 0;
+    }
+
+    .profile-dropdown-content ul li {
+        color: white;
+        font-weight: 300;
+    }
+
+    .profile-dropdown-content ul li:hover {
+        transform: scale(1.05);
+        transition: all 0.5 ease-in-out;
+    }
+}
+
+@media (max-width:1000px) {
+    .topnav ul {
         display: none;
     }
 
-    
-}
-
-@media (max-width:1000px){
-    .topnav ul{
+    #profile-button {
         display: none;
     }
-#profile-button{
-    display: none;
-}
 }
 
 
@@ -121,17 +166,18 @@ html{
 
 /* ----------------------- BOTTOM NAV BAR ----------------------- */
 
-.botnav{
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: row;
-margin: 0 15px;
+.botnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 15px;
 }
 
 
-.category, #categories{
-    background-color: var(--button);
+.category,
+#categories {
+    background-color: var(--whiteTransparentButton);
     color: var(--buttontext);
     width: 90px;
     height: 25px;
@@ -141,58 +187,136 @@ margin: 0 15px;
     font-weight: 300;
 }
 
-@media (min-width: 1000px){
-    .botnav{
+@media (min-width: 1000px) {
+    .botnav {
         display: none;
     }
+}
+
+/* ----------------------- PHONE VIEW HAMBURGER BAR ----------------------- */
+
+#phone-menu-button{
+    z-index: 0;
+}
+
+#phone-menu-button i:nth-child(2){
+    display: none;
+}
+#phone-menu-button i:nth-child(1){
+}
+
+@media (max-width: 1000px) {
+#phone-hamburger-menu{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgba(10, 13, 13, 1) ;
+}
+
+#phone-hamburger-menu-content{
+    margin: 100px 25px ;
+}
+
+#phone-hamburger-menu-content header{
+    margin: 0 0 10px 0;
+}
+
+#phone-hamburger-menu i{
+    color: white;
+    font-size: 40px;
+}
+
+#phone-hamburger-menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#phone-hamburger-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 40px;
+}
+#phone-hamburger-menu li i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 95px;
+    background-color: var(--whiteTransparentButton);
+    border-radius: 3px;
+}
+
+#phone-hamburger-menu li h5{
+margin-top: 5px;
+}
+
+#phone-hamburger-menu ul:nth-child(4){
+    margin: 0 10px;
+}
+
+
+}
+
+@media (min-width: 1000px) {
+#phone-hamburger-menu{
+    display: none;
+}
 }
 
 /* ----------------------- MOVIE POSTER ----------------------- */
 
 
-#movieposter{
+#movieposter {
     width: 352px;
     height: 474px;
     border-radius: 19px;
-    background-color: red;
-    background-image: url("images/jokerphoneposter.jpg");
+    background-color: var(--blackTransparentButton);
+    background-image: url("./images/jokerposter.png");
     margin: 20px auto;
 
 }
-main{
-width: 100%;
-height: 100%;
+
+main {
+    width: 100%;
+    height: 100%;
 }
 
-@media (min-width: 1000px){
-#movieposter{
-    display: none;
-}
+@media (min-width: 1000px) {
+    #movieposter {
+        display: none;
+    }
 }
 
 /* ----------------------- DESKTOP MOVIE INFO ----------------------- */
 
-#desktop-movie-info-container{
+#desktop-movie-info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: fit-content;
-    margin: 5% 0 4% 5%;
+    margin: 4% 0 2% 5%;
 }
 
-#desktop-movie-title{
+#desktop-movie-title {
     color: white;
     font-size: 27px;
     font-family: 'Jacques Francois', serif;
     text-transform: uppercase;
 }
 
-#desktop-movie-info-container ul li{
+#desktop-movie-info-container ul li {
     color: white;
     font-size: 2em;
     margin: 0 9px;
 }
-#desktop-movie-info-container ul{
+
+#desktop-movie-info-container ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -202,17 +326,18 @@ height: 100%;
 }
 
 
-#desktop-movie-logo{
+#desktop-movie-logo {
     width: fit-content;
     height: fit-content;
     margin-bottom: 4%;
 }
 
-@media (max-width: 1000px){
-    #desktop-movie-info-container{
-        display:none;
+@media (max-width: 1000px) {
+    #desktop-movie-info-container {
+        display: none;
     }
 }
+
 /* ----------------------- MOVIE SCROLL ----------------------- */
 
 .moviecontainer {
@@ -229,47 +354,48 @@ height: 100%;
     width: 108px;
     min-width: 108px;
     height: 154px;
-    background-color: red;
- margin-right: 10px;
+    background-color: var(--blackTransparentButton);
+    margin-right: 10px;
 }
 
-.scroll-snap{
+.scroll-snap {
     scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 1rem ;
+    scroll-padding-inline: 1rem;
 }
 
-.scroll-snap > *{
+.scroll-snap>* {
     scroll-snap-align: start;
 }
 
-.categoryname{
+.categoryname {
     color: var(--buttontext);
     margin: 20px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
-.moviescontainer{
-    margin: 20px 0;
+.moviescontainer {
+    margin: 0px 0;
 }
 
-@media (min-width: 1000px){
-    .movie{
+@media (min-width: 1000px) {
+    .movie {
         width: 291px;
         min-width: 291px;
         height: 165px;
-        background-color: red;
+        background-color: var(--blackTransparentButton);
         margin-right: 15px;
         border-radius: 5px;
     }
-/* Detta är för när jag byter ut divs till bilder */
-  .moviescontainer > img{ 
-    inline-size: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-  }
 
-    .categoryname{
+    /* Detta är för när jag byter ut divs till bilder */
+    .moviescontainer>img {
+        inline-size: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+
+    .categoryname {
         font-size: 2em;
     }
 

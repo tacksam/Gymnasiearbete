@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/index.js"></script>
     <script src="https://kit.fontawesome.com/b9bbadaa1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="universal.css">
@@ -20,9 +21,24 @@
 
 <!-- ----------------------- TOP NAV BAR -----------------------  -->
     <header>
+        <div id="phone-hamburger-menu">
+            <div id="phone-hamburger-menu-content">
+            <ul>
+<li><i class="fa-solid fa-user"></i> <h5>Account</h5></li>
+<li><i class="fa-regular fa-credit-card"></i><h5>Subscription</h5></li>
+<li><i class="fa-regular fa-newspaper"></i><h5>Upcoming</h5></li>
+            </ul>
+            <hr>
+            <ul>
+                <li><h5>About Us</h5></li>
+                <li><h5>Help Center</h5></li>
+                <li><h5>Logout</h5></li>
+            </ul>
+        </div>
+        </div>    
 <nav>
 <div class="topnav">
-    <i class="fa-solid fa-bars"></i>
+    <button onclick="closeMenu()" id="phone-menu-button"><i class="fa-solid fa-bars"></i> <i class="fa-solid fa-xmark"></i></button>
     <ul>
         <li>Home</li>
         <li>Movies</li>
@@ -32,8 +48,26 @@
 
     <div class="box">
         <input id="searchbar" type="text" placeholder="Search..">
-        <button id="search-button" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <button onclick="searchExtention()" id="search-button" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        <div class="profile-dropdown">
         <button id="profile-button" type="button"><i class="fa-solid fa-user" aria-hidden="true"></i></button>
+        <div class="profile-dropdown-content">
+            <ul>
+                <li>Account</li>
+                <li>Profiles</li>
+                <li>Subscription</li>
+                </ul>
+              <ul>
+                <li>About Us</li>
+                <li>Help Center</li>
+              </ul>
+              <ul>
+                <li>
+               Logout
+                </li>
+              </ul>
+          </div>
+        </div>
     </div>
 </div>
 
@@ -53,6 +87,8 @@
 </div>        
         </nav>
     </header>
+
+
 
     <main>
         <hr>
@@ -121,11 +157,5 @@
 </html>
 
 <script>
-    // document.getElementById('desktop-movie-title').innerHTML = 
-
-
-    // console.log(document.getElementById('desktop-movie-logo').offsetWidth)
-
-    // if(document.getElementById('desktop-movie-logo'))
 
 </script>
