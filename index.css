@@ -206,7 +206,7 @@ html {
 #phone-menu-button i:nth-child(1) {}
 
 @media (max-width: 1000px) {
-    #phone-menu-button{
+    #phone-menu-button {
         display: none;
     }
 
@@ -298,7 +298,8 @@ main {
     }
 }
 
-/* ----------------------- DESKTOP MOVIE INFO ----------------------- */
+/* ----------------------- DESKTOP MOVIE INFO 
+----------------------- */
 
 #desktop-movie-info-container {
     display: flex;
@@ -342,6 +343,30 @@ main {
         display: none;
     }
 }
+
+/* -----------------------DESKTOP MOVIE HOLDER----------------------- */
+
+@media (min-width: 1000px) {
+    #desktop-movie-holder {
+        width: 1080px;
+        height: 1000px;
+        position: absolute;
+        left: calc(50vw - (1080px / 2));
+        background-color: orange;
+        border-radius: 40px;
+        text-align: right;
+    }
+
+    #upper-desktop-movie-holder-wrapper i {
+        color: red;
+        font-size: 50px;
+        margin: 20px;
+        padding: 10px;
+        border-radius: 100%;
+        background-color: var(--blackTransparentButton);
+    }
+}
+
 
 /* ----------------------- MOVIE SCROLL ----------------------- */
 
