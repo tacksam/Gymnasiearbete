@@ -43,3 +43,11 @@ function closeMenu(){
       secondIcon.style.display = "none";
     }    
 }
+
+// ----------------- CLOSE DESKTOP MOVIE PREVIEW ------------------- 
+function closePreview(){
+    document.getElementById("desktop-movie-holder").style.display = "none"
+}
+function openPreview(){
+    document.getElementById("desktop-movie-holder").style.display = "inherit"
+}

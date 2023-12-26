@@ -357,14 +357,12 @@ main {
         text-align: right;
     }
 
-    #playbutton{
-        color: white;
+    #close-desktop-movie-preview-button-icon{
         font-size: 30px;
         margin: 20px;
         padding: 7px 12px;
         border-radius: 100%;
         background-color: var(--blackTransparentButton);
-        /* (57.5 & 70) */
     }
     
 
@@ -374,7 +372,7 @@ main {
         height: 607px;
         border-radius: 40px 40px 0 0;
     }
-    #upper-desktop-movie-holder-wrapper button{
+    #play-button-desktop-movie-preview{
         background-color: white;
         height: 50px;
         width: 100%;
