@@ -352,18 +352,66 @@ main {
         height: 1000px;
         position: absolute;
         left: calc(50vw - (1080px / 2));
-        background-color: orange;
-        border-radius: 40px;
+        background-color: rgba(20, 20, 20, 1);
+        border-radius: 40px 40px 0 0;
         text-align: right;
     }
 
-    #upper-desktop-movie-holder-wrapper i {
-        color: red;
-        font-size: 50px;
+    #playbutton{
+        color: white;
+        font-size: 30px;
         margin: 20px;
-        padding: 10px;
+        padding: 7px 12px;
         border-radius: 100%;
         background-color: var(--blackTransparentButton);
+        /* (57.5 & 70) */
+    }
+    
+
+    #upper-desktop-movie-holder-wrapper{
+        background-image: url("images/background.png");
+        overflow: hidden;
+        height: 607px;
+        border-radius: 40px 40px 0 0;
+    }
+    #upper-desktop-movie-holder-wrapper button{
+        background-color: white;
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #upper-desktop-movie-holder-wrapper button h2{
+        color: black;
+        text-transform: uppercase;        
+        margin: 0 20px;
+
+    }
+    
+    #upper-desktop-movie-holder-wrapper button i{
+        color: black;
+        font-size: 30px;
+        margin: 0 20px;
+    }
+
+    #desktop-movie-infotext-container span{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    #desktop-movie-infotext-container span p{
+        width:500px;
+        text-align: right;
+        margin: 10px;
+    }
+    #desktop-movie-infotext-container span :first-child {
+        background-color: orange;
+        text-align: left;
     }
 }
 
@@ -432,4 +480,4 @@ main {
 
 }
 
-/* test */
+/* code wolfpack */
