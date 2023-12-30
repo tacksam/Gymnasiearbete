@@ -30,15 +30,14 @@ const inception = {
 }
 
 const bonjourMadame = {
-    movieName: "Teinf21 - Bonjour Madame (Music Video)",
+    movieName: "Music Video",
     descText: "In the final technology class at Rönninge Gymnasium, the students of Teknik 21 embarked on a creative journey that transcended conventional boundaries. Fueled by innovation, the class collectively wrote, recorded, and rapped an extraordinary song that defied expectations. Their collaborative effort captured the essence of contemporary issues, resonating with a global audience and swiftly turning into a viral sensation with millions of views. The class enlisted the artistic prowess of Ivar Petit, whose meticulously crafted music video not only complemented the track but also garnered critical acclaim, earning prestigious awards. Teknik 21's remarkable fusion of technology, creativity, and musical prowess left an indelible mark on their high school legacy.",
-    moviePoster: "",
-    moviePosterText: "",
+    moviePoster: "url(images/teinf21/teinf1920.png)",
+    moviePosterText: "images/teinf21/bonjourmadame.png",
     genreOne: "Comedy",
     genreTwo: "Music",
     genreThree: "Rap",
 }
-
 
 
 

@@ -321,7 +321,7 @@ main {
     margin: 4% 0 2% 5%;
 }
 
-#desktop-movie-title {
+#desktop-movie-title-preview, #desktop-movie-title {
     color: white;
     font-size: 27px;
     font-family: 'Jacques Francois', serif;
@@ -332,6 +332,8 @@ main {
     color: white;
     font-size: 2em;
     margin: 0 9px;
+    font-family: 'Jost', sans-serif;
+
 }
 
 #desktop-movie-info-container ul {
@@ -386,6 +388,8 @@ main {
         overflow: hidden;
         height: 607px;
         border-radius: 40px 40px 0 0;
+        background-size: cover;
+        background-position:
     }
     #play-button-desktop-movie-preview{
         background-color: white;
