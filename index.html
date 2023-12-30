@@ -114,7 +114,7 @@
     </header>
     <div id="desktop-movie-holder">
         <div id="upper-desktop-movie-holder-wrapper">
-            <button id="close-desktop-movie-preview-button"> <i id="close-desktop-movie-preview-button-icon" class="fa-solid fa-xmark"></i></button>
+            <button onclick="closePreview()" id="close-desktop-movie-preview-button"> <i id="close-desktop-movie-preview-button-icon" class="fa-solid fa-xmark"></i></button>
             <div id="desktop-movie-info-container">
                 <div id="desktop-movie-logo">
                     <img src="images/joker.png" alt="movie logo">
@@ -135,11 +135,28 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio enim voluptatibus esse. Dolor laboriosam qui inventore eveniet consequatur. Placeat libero ea vero. Incidunt, tenetur nisi eveniet tempore nam itaque! Suscipit fuga at dignissimos neque magnam recusandae nesciunt amet ipsum nobis, cupiditate illo temporibus dicta modi aut? Odio quas ipsa harum?</p></span>
         </div>
 
+        <div class="moviescontainer movies-alike-container">
+            <label for="movies-alike" class="categoryname">Movies alike</label>
+            <div id="movies-alike" class="moviecontainer scroll-snap">
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movie1"></div>
 
+            </div>
+        </div>
     </div>
 
 
-    <main>
+    <main onclick="openPreview()">
         <hr>
         <!-- ----------------------- MOVIE POSTER -----------------------  -->
         <div id="movieposter"></div>

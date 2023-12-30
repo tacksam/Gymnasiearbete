@@ -355,6 +355,7 @@ main {
         background-color: rgba(20, 20, 20, 1);
         border-radius: 40px 40px 0 0;
         text-align: right;
+        transition: 0.2s ease-in-out;
     }
 
     #close-desktop-movie-preview-button-icon{
@@ -363,8 +364,9 @@ main {
         padding: 7px 12px;
         border-radius: 100%;
         background-color: var(--blackTransparentButton);
+        color: white;
     }
-    
+
 
     #upper-desktop-movie-holder-wrapper{
         background-image: url("images/background.png");
@@ -390,10 +392,10 @@ main {
 
     }
     
-    #upper-desktop-movie-holder-wrapper button i{
-        color: black;
-        font-size: 30px;
+    #play-button-desktop-movie-preview i {
+        color:black;
         margin: 0 20px;
+        font-size: 30px;
     }
 
     #desktop-movie-infotext-container span{
@@ -408,8 +410,15 @@ main {
         margin: 10px;
     }
     #desktop-movie-infotext-container span :first-child {
-        background-color: orange;
         text-align: left;
+    }
+
+
+
+    @media (max-width: 1000px){
+        #desktop-movie-holder{
+            display: none;
+        }
     }
 }
 

@@ -46,8 +46,8 @@ function closeMenu(){
 
 // ----------------- CLOSE DESKTOP MOVIE PREVIEW ------------------- 
 function closePreview(){
-    document.getElementById("desktop-movie-holder").style.display = "none"
+    document.getElementById("desktop-movie-holder").style.transform = "scale(0)"
 }
 function openPreview(){
-    document.getElementById("desktop-movie-holder").style.display = "inherit"
+    document.getElementById("desktop-movie-holder").style.transform = "scale(1)"
 }
