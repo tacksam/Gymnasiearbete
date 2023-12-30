@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/javascript/index.js"></script>
-    <script src="/javascript/moviepreview.js"></script>
+    <!-- <script src="/javascript/moviepreview.js"></script>
+    <script src="/javascript/index.js"></script> -->
     <script src="https://kit.fontawesome.com/b9bbadaa1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="universal.css">
@@ -27,7 +27,6 @@
         rel="stylesheet">
     <title>Movie browse</title>
 </head>
-
 <body>
     <!-- ----------------------- TOP NAV BAR -----------------------  -->
     <header>
@@ -95,8 +94,6 @@
                     </div>
                 </div>
             </div>
-
-
             <!-- ----------------------- BOTTOM NAV BAR -----------------------  -->
 
 
@@ -135,7 +132,6 @@
             <span><p id="desktop-movie-info-paragraph-one"></p>
                 <p id="desktop-movie-info-paragraph-two"></p></span>
         </div>
-
         <div class="moviescontainer movies-alike-container">
             <label for="movies-alike" class="categoryname">Movies alike</label>
             <div id="movies-alike" class="moviecontainer scroll-snap">
@@ -157,7 +153,7 @@
     </div>
 </div>
 
-    <main onclick="openPreview()">
+    <main onclick="changeVal(putOnAHappyFace)">
         <hr>
         <!-- ----------------------- MOVIE POSTER -----------------------  -->
         <div id="movieposter"></div>
@@ -177,7 +173,6 @@
         </div>
 
 
-
     </main>
     <footer>
         <div class="moviescontainer">
@@ -186,7 +181,9 @@
                 <div class="movie" id="movie1">
                     <img src="/images/teinf21.jpg" alt="thumbnail">
                 </div> 
-                <div class="movie" id="movie1"></div>
+                <div onclick="changeVal(inception)" class="movie" id="movie1">
+                    <img src="images/inception/inceptionposter.jpg" alt="thumbnail">
+                </div>
                 <div class="movie" id="movie1"></div>
                 <div class="movie" id="movie1"></div>
                 <div class="movie" id="movie1"></div>
@@ -224,7 +221,8 @@
 
 
 
-
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/moviepreview.js"></script>
 </body>
 
 </html>
