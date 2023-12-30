@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/index.js"></script>
+    <script src="/javascript/index.js"></script>
+    <script src="/javascript/moviepreview.js"></script>
     <script src="https://kit.fontawesome.com/b9bbadaa1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="universal.css">
@@ -117,22 +118,22 @@
             <button onclick="closePreview()" id="close-desktop-movie-preview-button"> <i id="close-desktop-movie-preview-button-icon" class="fa-solid fa-xmark"></i></button>
             <div id="desktop-movie-info-container">
                 <div id="desktop-movie-logo">
-                    <img src="images/joker.png" alt="movie logo">
+                    <img id="desktop-movie-logo-image-preview" src="images/joker.png" alt="movie logo">
                 </div>
-                <h1 id="desktop-movie-title">put on a happy face</h1>
+                <h1 id="desktop-movie-title-preview">put on a happy face</h1>
                 <ul>
-                    <li id="movie-category1">crime</li>
+                    <li id="movie-categoryOne-preview">crime</li>
                     <li>|</li>
-                    <li id="movie-category2">psychology</li>
+                    <li id="movie-categoryTwo-preview">psychology</li>
                     <li>|</li>
-                    <li id="movie-category3">horror</li>
+                    <li id="movie-categoryThree-preview">horror</li>
                 </ul>
                 <button id="play-button-desktop-movie-preview" class="animate__animated animate__bounce"><i class="fa-solid fa-play"></i><h2>play</h2></button>
             </div>
         </div>
         <div id="desktop-movie-infotext-container">
-            <span><p>Joker: Put on a Happy Face" captivates audiences with its gripping portrayal of the iconic character. The film delves into the psyche of Arthur Fleck, a struggling comedian, exploring the transformative journey that leads him to become the infamous Joker. Joaquin Phoenix's mesmerizing performance elevates the narrative, delivering a nuanced and haunting portrayal of the complex character. The film's </p>
-                <p>The film's atmospheric cinematography and evocative soundtrack create a visceral experience, immersing viewers in the gritty, chaotic world of Gotham. "Joker: Put on a Happy Face" is a thought-provoking exploration of the fine line between sanity and madness, leaving a lasting impact on the audience without revealing key plot details.</p></span>
+            <span><p id="desktop-movie-info-paragraph-one"></p>
+                <p id="desktop-movie-info-paragraph-two"></p></span>
         </div>
 
         <div class="moviescontainer movies-alike-container">
@@ -182,7 +183,9 @@
         <div class="moviescontainer">
             <label for="horrorcategory" class="categoryname">Horror</label>
             <div id="horrorcategory" class="moviecontainer scroll-snap">
-                <div class="movie" id="movie1"></div>
+                <div class="movie" id="movie1">
+                    <img src="/images/teinf21.jpg" alt="thumbnail">
+                </div> 
                 <div class="movie" id="movie1"></div>
                 <div class="movie" id="movie1"></div>
                 <div class="movie" id="movie1"></div>

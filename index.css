@@ -497,10 +497,15 @@ main {
         object-fit: cover;
     }
 
+    .movie img{
+        height: 100%;
+        width: 100%;
+    }
+    
     .categoryname {
         font-size: 2em;
     }
 
 
 }
- 
+
