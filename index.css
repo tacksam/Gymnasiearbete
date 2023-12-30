@@ -43,6 +43,7 @@ html {
     padding: 12px 20px;
     border-radius: 30px;
     width: 65%;
+    z-index: 50;
 }
 
 .box input[type="text"] {
@@ -205,6 +206,7 @@ html {
 
 /* ----------------------- PHONE VIEW HAMBURGER BAR ----------------------- */
 
+
 #phone-menu-button {
     z-index: 0;
 }
@@ -217,7 +219,7 @@ html {
 
 @media (max-width: 1000px) {
     #phone-menu-button {
-        display: none;
+        display: block; /* marker2 */
     }
 
     #phone-hamburger-menu {
@@ -366,6 +368,7 @@ main {
         border-radius: 40px 40px 0 0;
         text-align: right;
         transition: 0.2s ease-in-out;
+        transform: scale(0);
     }
 
     #close-desktop-movie-preview-button-icon{
@@ -434,7 +437,7 @@ main {
     
 }
 
-/* marker */
+/* marker1 */
 
 
 /* ----------------------- MOVIE SCROLL ----------------------- */
