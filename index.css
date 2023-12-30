@@ -382,6 +382,8 @@ main {
         color: white;
     }
 
+    
+
 
     #upper-desktop-movie-holder-wrapper{
         background-image: url("images/background.png");
@@ -391,7 +393,7 @@ main {
         background-size: cover;
         background-position:
     }
-    #play-button-desktop-movie-preview{
+    #play-button-desktop-movie-preview, a{
         background-color: white;
         height: 50px;
         width: 100%;
@@ -400,6 +402,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
     }
 
     #upper-desktop-movie-holder-wrapper button h2{

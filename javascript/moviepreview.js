@@ -6,7 +6,7 @@ var tDescOne = document.getElementById("desktop-movie-info-paragraph-one");
 var tDescTwo = document.getElementById("desktop-movie-info-paragraph-two");
 var tMoviePosterText = document.getElementById("desktop-movie-logo-image-preview");
 var tMoviePosterBackground = document.getElementById("upper-desktop-movie-holder-wrapper");
-
+var tLink = document.getElementById("p-lay");
 
 // Movie declaration
 const putOnAHappyFace = {
@@ -17,6 +17,8 @@ const putOnAHappyFace = {
     genreOne: "crime",
     genreTwo: "psychology",
     genreThree: "horror",
+    link: "",
+
 }
 
 const inception = {
@@ -27,6 +29,8 @@ const inception = {
     genreOne: "action",
     genreTwo: "science fiction",
     genreThree: "thriller",
+    link: "",
+
 }
 
 const bonjourMadame = {
@@ -37,6 +41,7 @@ const bonjourMadame = {
     genreOne: "Comedy",
     genreTwo: "Music",
     genreThree: "Rap",
+    link: "teinf21video/bonjourmadame.html",
 }
 
 
@@ -57,6 +62,7 @@ function changeVal(movie) {
     tMovieGenreThree.innerHTML = movie.genreThree;
     tMoviePosterBackground.style.backgroundImage = movie.moviePoster;
     tMoviePosterText.src = movie.moviePosterText;
+    tLink.href = movie.link;
 
     // Dela upp descText vid det sista mellanslaget inom den första halvan
     const descLength = movie.descText.length;
