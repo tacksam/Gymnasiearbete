@@ -1,20 +1,94 @@
 .box1 {
     display: flex;
 
-    border: 2px whitesmoke solid;
+    border: 2px var(--whiteTransparentButton) solid;
+    font-family: 'Poppins', sans-serif;
 
 
 }
 
-/* .box {
-    margin: 500px 90px 0 50px;
-} */
+
 .inputwrapper {
     margin: 9px 6px 0 30px;
+    color: var(--whiteTransparentButton);
+    font-family: 'Poppins', sans-serif;
 }
 
 .payment,
 .premium {
     margin: 9px 6px 0 30px;
-    border: 3px rgb(201, 0, 194) solid;
+    border: 3px var(--whiteTransparentButton) solid;
+    background-color: var(--whiteTransparentButton);
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 0px 0px 75px;
+}
+
+html {
+    background-image: url("./images/redbackgroundambient.png");
+    background-size: 500%;
+}
+
+label,
+fieldset,
+h {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+.phonebutton1,
+button {
+    color: white;
+    border: 3px var(--whiteTransparentButton) solid;
+    display: flexbox;
+    margin: 5px 0 0 70px;
+    border-style: double;
+    padding: 3px 15px 3px 15px;
+    background-color: var(--blackTransparentButton);
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    color: (--whiteTransparentButton);
+}
+
+.payment {
+    display: flex;
+}
+
+@media (min-width: 1000px) {
+
+    .phonebutton1,
+    button {
+        color: white;
+        border: 3px var(--whiteTransparentButton) solid;
+        display: flexbox;
+        margin: 5px 100px 0 240px;
+        border-style: double;
+        padding: 5px 25px 5px 25px;
+        background-color: var(--blackTransparentButton);
+        font-family: 'Poppins', sans-serif;
+
+    }
+}
+
+@media (min-width: 1000px) {
+    .premium-payment {
+        padding-right: 200px;
+        padding-left: 150px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .payment-premium {
+        padding-left: 100px;
+
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .box1,
+    .box {
+        margin-left: 400px;
+    }
 }
