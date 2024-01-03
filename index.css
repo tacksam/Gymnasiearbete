@@ -1,3 +1,13 @@
+@media (max-width: 1000px){
+    #test{
+        display: none;
+        }
+}
+
+
+
+/* Fråga pascal varför det inte funkar om jag placerar vid ett annat ställe en högst upp */
+
 /* ----------------------- TOP NAV BAR ----------------------- */
 html {
     background-image: url("/images/background.png");
@@ -33,6 +43,7 @@ html {
     padding: 12px 20px;
     border-radius: 30px;
     width: 65%;
+    z-index: 50;
 }
 
 .box input[type="text"] {
@@ -195,6 +206,7 @@ html {
 
 /* ----------------------- PHONE VIEW HAMBURGER BAR ----------------------- */
 
+
 #phone-menu-button {
     z-index: 0;
 }
@@ -206,6 +218,10 @@ html {
 #phone-menu-button i:nth-child(1) {}
 
 @media (max-width: 1000px) {
+    #phone-menu-button {
+        display: block; /* marker2 */
+    }
+
     #phone-hamburger-menu {
         display: none;
         position: absolute;
@@ -294,7 +310,8 @@ main {
     }
 }
 
-/* ----------------------- DESKTOP MOVIE INFO ----------------------- */
+/* ----------------------- DESKTOP MOVIE INFO 
+----------------------- */
 
 #desktop-movie-info-container {
     display: flex;
@@ -304,7 +321,7 @@ main {
     margin: 4% 0 2% 5%;
 }
 
-#desktop-movie-title {
+#desktop-movie-title-preview, #desktop-movie-title {
     color: white;
     font-size: 27px;
     font-family: 'Jacques Francois', serif;
@@ -315,6 +332,8 @@ main {
     color: white;
     font-size: 2em;
     margin: 0 9px;
+    font-family: 'Jost', sans-serif;
+
 }
 
 #desktop-movie-info-container ul {
@@ -338,6 +357,95 @@ main {
         display: none;
     }
 }
+
+/* -----------------------DESKTOP MOVIE HOLDER----------------------- */
+
+@media (min-width: 1000px) {
+    #desktop-movie-holder {
+        width: 1080px;
+        height: 1000px;
+        position: absolute;
+        left: calc(50vw - (1080px / 2));
+        background-color: rgba(20, 20, 20, 1);
+        border-radius: 40px 40px 0 0;
+        text-align: right;
+        transition: 0.2s ease-in-out;
+        transform: scale(0);
+    }
+
+    #close-desktop-movie-preview-button-icon{
+        font-size: 30px;
+        margin: 20px;
+        padding: 7px 12px;
+        border-radius: 100%;
+        background-color: var(--blackTransparentButton);
+        color: white;
+    }
+
+    
+
+
+    #upper-desktop-movie-holder-wrapper{
+        background-image: url("images/background.png");
+        overflow: hidden;
+        height: 607px;
+        border-radius: 40px 40px 0 0;
+        background-size: cover;
+        background-position:
+    }
+    #play-button-desktop-movie-preview, a{
+        background-color: white;
+        height: 50px;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #upper-desktop-movie-holder-wrapper button h2{
+        color: black;
+        text-transform: uppercase;        
+        margin: 0 20px;
+
+    }
+    
+    #play-button-desktop-movie-preview i {
+        color:black;
+        margin: 0 20px;
+        font-size: 30px;
+    }
+
+    #desktop-movie-infotext-container span{
+        display: flex;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    #desktop-movie-infotext-container span p{
+        width:500px;
+        text-align: right;
+        margin: 10px;
+    }
+    #desktop-movie-infotext-container span :first-child {
+        text-align: left;
+    }
+
+
+
+    @media (max-width: 1000px){
+        #desktop-movie-holder{
+            display: none;
+        }
+    }
+
+    
+}
+
+/* marker1 */
+
 
 /* ----------------------- MOVIE SCROLL ----------------------- */
 
@@ -396,9 +504,15 @@ main {
         object-fit: cover;
     }
 
+    .movie img{
+        height: 100%;
+        width: 100%;
+    }
+    
     .categoryname {
         font-size: 2em;
     }
 
 
 }
+

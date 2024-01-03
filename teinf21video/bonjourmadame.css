@@ -1,0 +1,29 @@
+body{
+    background-color: black;
+}
+
+header{
+    
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    width: 80%;
+    height: 80%;
+
+}
+
+i{
+    color: white;
+    font-size: 2em;
+    margin: 15px;
+    position: absolute;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
