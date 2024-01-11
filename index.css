@@ -437,13 +437,14 @@ main {
     }
 
 /* marker1 */
-@media (max-width: 1000px) {
-    #upper-desktop-movie-holder-wrapper{
+@media (max-width: 700px) {
+    #flexcontainer{
         align-items: center;
         justify-content: center;
         display: flex;
     }
     }
+
 
 /* ----------------------- MOVIE SCROLL ----------------------- */
 
@@ -455,6 +456,12 @@ main {
     overflow-y: hidden;
     margin: 0 20px;
     overscroll-behavior-inline: contain;
+}
+
+.movie a{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
 }
 
 .movie {
