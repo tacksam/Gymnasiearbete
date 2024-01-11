@@ -1,9 +1,3 @@
-@media (max-width: 1000px){
-    #test{
-        display: none;
-        }
-}
-
 
 
 /* Fråga pascal varför det inte funkar om jag placerar vid ett annat ställe en högst upp */
@@ -351,12 +345,19 @@ main {
     height: fit-content;
     margin-bottom: 4%;
 }
-
 @media (max-width: 1000px) {
-    #desktop-movie-info-container {
-        display: none;
+    #desktop-movie-info-container{
+        margin: 0;
     }
-}
+
+    main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    }
+
 
 /* -----------------------DESKTOP MOVIE HOLDER----------------------- */
 
@@ -366,51 +367,8 @@ main {
         height: 1000px;
         position: absolute;
         left: calc(50vw - (1080px / 2));
-        background-color: rgba(20, 20, 20, 1);
-        border-radius: 40px 40px 0 0;
-        text-align: right;
-        transition: 0.2s ease-in-out;
-        transform: scale(0);
     }
 
-    #close-desktop-movie-preview-button-icon{
-        font-size: 30px;
-        margin: 20px;
-        padding: 7px 12px;
-        border-radius: 100%;
-        background-color: var(--blackTransparentButton);
-        color: white;
-    }
-
-    
-
-
-    #upper-desktop-movie-holder-wrapper{
-        background-image: url("images/background.png");
-        overflow: hidden;
-        height: 607px;
-        border-radius: 40px 40px 0 0;
-        background-size: cover;
-        background-position:
-    }
-    #play-button-desktop-movie-preview, a{
-        background-color: white;
-        height: 50px;
-        width: 100%;
-        margin-top: 10px;
-        border-radius: px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-    }
-
-    #upper-desktop-movie-holder-wrapper button h2{
-        color: black;
-        text-transform: uppercase;        
-        margin: 0 20px;
-
-    }
     
     #play-button-desktop-movie-preview i {
         color:black;
@@ -432,20 +390,60 @@ main {
     #desktop-movie-infotext-container span :first-child {
         text-align: left;
     }
-
-
-
-    @media (max-width: 1000px){
-        #desktop-movie-holder{
-            display: none;
-        }
-    }
-
     
 }
+#upper-desktop-movie-holder-wrapper{
+    background-image: url("images/background.png");
+    overflow: hidden;
+    height: 607px;
+    border-radius: 40px 40px 0 0;
+    background-size: cover;
+    background-position:
+}
+#play-button-desktop-movie-preview, a{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#upper-desktop-movie-holder-wrapper button h2{
+    color: black;
+    text-transform: uppercase;        
+    margin: 0 20px;
+
+}
+
+#desktop-movie-holder {
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 40px 40px 0 0;
+    text-align: right;
+    transition: 0.2s ease-in-out;
+    transform: scale(0);
+}
+
+    #close-desktop-movie-preview-button-icon{
+        font-size: 30px;
+        margin: 20px;
+        padding: 7px 12px;
+        border-radius: 100%;
+        background-color: var(--blackTransparentButton);
+        color: white;
+    }
 
 /* marker1 */
-
+@media (max-width: 1000px) {
+    #upper-desktop-movie-holder-wrapper{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    }
 
 /* ----------------------- MOVIE SCROLL ----------------------- */
 
@@ -465,6 +463,11 @@ main {
     height: 154px;
     background-color: var(--blackTransparentButton);
     margin-right: 10px;
+}
+
+.movie{
+    background-position: center;
+    background-size: cover;
 }
 
 .scroll-snap {
@@ -513,6 +516,15 @@ main {
         font-size: 2em;
     }
 
-
+    
 }
 
+
+/* movies */
+
+#movie1{
+    background-image: url("images/teinf21/teinf21poster.jpg");
+}
+#movie2{
+    background-image: url("/images/inception/inceptionposter.jpg");
+}
