@@ -75,7 +75,7 @@ html {
 @media (min-width: 1000px) {
     html {
         background-repeat: no-repeat;
-        background: url("images/joker1920.png"), rgba(2, 7, 11, 1), no-repeat;
+        background: url("images/joker1920.png"), no-repeat;
     }
 
 
@@ -150,7 +150,7 @@ html {
 
     .profile-dropdown-content ul li:hover {
         transform: scale(1.05);
-        transition: all 0.5 ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 }
 
@@ -306,7 +306,7 @@ main {
 /* ----------------------- DESKTOP MOVIE INFO 
 ----------------------- */
 
-#desktop-movie-info-container {
+.desktop-movie-info-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -321,7 +321,7 @@ main {
     text-transform: uppercase;
 }
 
-#desktop-movie-info-container ul li {
+.desktop-movie-info-container ul li {
     color: white;
     font-size: 2em;
     margin: 0 9px;
@@ -329,7 +329,7 @@ main {
 
 }
 
-#desktop-movie-info-container ul {
+.desktop-movie-info-container ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -339,13 +339,13 @@ main {
 }
 
 
-#desktop-movie-logo {
+.desktop-movie-logo {
     width: fit-content;
     height: fit-content;
     margin-bottom: 4%;
 }
 @media (max-width: 1000px) {
-    #desktop-movie-info-container{
+    .desktop-movie-info-container{
         margin: 0;
     }
 
@@ -375,19 +375,22 @@ main {
         font-size: 30px;
     }
 
-    #desktop-movie-infotext-container span{
+    #desktop-movie-infotext-container{
         display: flex;
         text-align: left;
         justify-content: space-between;
+        font-size: 12px;
     }
 
-    #desktop-movie-infotext-container span p{
+    #desktop-movie-infotext-container span{
         width:500px;
-        text-align: right;
         margin: 10px;
     }
-    #desktop-movie-infotext-container span :first-child {
+    #desktop-movie-info-paragraph-one {
         text-align: left;
+    }
+    #desktop-movie-info-paragraph-two {
+        text-align: right;
     }
     
 }
@@ -398,23 +401,25 @@ main {
     border-radius: 40px 40px 0 0;
     background-size: cover;
 }
-#play-button-desktop-movie-preview, a{
+#play-button-desktop-movie-preview{
     background-color: white;
     height: 50px;
     width: 100%;
     margin-top: 10px;
-    border-radius: px;
+    border-radius: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    font-family: poppins;
+    color: black;
 }
 
-#upper-desktop-movie-holder-wrapper button h2{
+#upper-desktop-movie-holder-wrapper{
     color: black;
     text-transform: uppercase;        
     margin: 0 20px;
-
+    font-size: 24px;
 }
 
 #desktop-movie-holder {

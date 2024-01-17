@@ -6,7 +6,7 @@ var tDescOne = document.getElementById("desktop-movie-info-paragraph-one");
 var tDescTwo = document.getElementById("desktop-movie-info-paragraph-two");
 var tMoviePosterText = document.getElementById("desktop-movie-logo-image-preview");
 var tMoviePosterBackground = document.getElementById("upper-desktop-movie-holder-wrapper");
-var tLink = document.getElementById("p-lay");
+var tLink = document.getElementById("play-button-desktop-movie-preview");
 
 // Movie declaration
 const putOnAHappyFace = {
@@ -65,7 +65,7 @@ function changeVal(movie) {
     tMovieGenreThree.innerHTML = movie.genreThree;
     tMoviePosterBackground.style.backgroundImage = movie.moviePoster;
     tMoviePosterText.src = movie.moviePosterText;
-    tLink.href = movie.link;
+    tLink.href = movie.link; 
 
     const descLength = movie.descText.length;
     const halfLength = Math.ceil(descLength / 2);
