@@ -1,0 +1,229 @@
+/* ----------------------- TOP NAV BAR ----------------------- */
+html {
+    background-image: url("/bilder/MazeRunner-2014-1.jpg");
+}
+
+#searchbar {
+    background-color: transparent;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    height: 92px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.topnav i:not(.box i) {
+    font-size: 35px;
+    color: white;
+}
+
+.box button {
+    background-color: transparent;
+}
+
+.box {
+    background-color: var(--whiteTransparentButton);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px 20px;
+    border-radius: 30px;
+    width: 65%;
+}
+
+.box input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: inherit;
+    width: 100%;
+    color: var(--buttontext);
+    font-weight: 200;
+
+
+}
+
+.topnav ul {
+    display: flex;
+    margin-left: 5%;
+}
+
+.topnav ul li {
+    color: white;
+    list-style-type: none;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+
+
+.box i {
+    color: rgba(153, 153, 153, 255);
+    font-size: 20px;
+}
+
+
+@media (min-width: 1000px) {
+    html {
+        background-repeat: no-repeat;
+        background: url("images/joker1920.png"), rgba(2, 7, 11, 1), no-repeat;
+    }
+
+
+    hr {
+        display: none;
+    }
+
+    .topnav {
+        justify-content: space-between;
+        background: rgb(0, 6, 1);
+        background: linear-gradient(180deg, rgba(0, 6, 1, 1) 30%, rgba(255, 255, 255, 0) 100%);
+        border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+        height: 60px;
+    }
+
+    .topnav i:not(.box i) {
+        display: none;
+    }
+
+    .box {
+        display: flex;
+        justify-content: end;
+        background-color: transparent;
+        width: 360px;
+    }
+
+    .box button {
+        margin: 10px;
+        background-color: rgba(4, 7, 11, 0.2);
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+    }
+
+    .box button i {
+        font-size: 23px;
+        color: white;
+    }
+
+    .box input[type="text"] {
+        transition: all 0.2s ease-in-out;
+        width: 0;
+    }
+
+
+    .profile-dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 40px;
+        background-color: var(--blackTransparentButton);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        height: fit-content;
+    }
+
+    .profile-dropdown:hover .profile-dropdown-content {
+        display: flex;
+    }
+
+    .profile-dropdown-content ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 0;
+    }
+
+    .profile-dropdown-content ul li {
+        color: white;
+        font-weight: 300;
+    }
+
+    .profile-dropdown-content ul li:hover {
+        transform: scale(1.05);
+        transition: all 0.5 ease-in-out;
+    }
+}
+
+@media (max-width:1000px) {
+    .topnav ul {
+        display: none;
+    }
+
+    #profile-button {
+        display: none;
+    }
+}
+
+
+/*  ----------------------- MOVIEW PREVIEW -----------------------*/
+
+#movieholder {
+    width: 100vh;
+    height: 250px;
+    background-color: aqua;
+}
+
+#moviepresentation {
+    background-color: var(--blackTransparentButton);
+}
+
+#moviepresentation ul {
+    display: flex;
+    list-style: none;
+}
+
+#moviepresentation ul li {
+    margin: 0 5px;
+}
+
+#moviepresentation ul li i {
+    color: white;
+    font-size: 13px;
+}
+
+#moviepresentation div:nth-child(2) {
+    background-color: orange;
+    width: 500px;
+    height: 100px;
+}
+
+h2,
+main ul {
+    margin: 0 5px;
+}
+
+.moviepresentation-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.moviepresentation-button-wrapper button {
+    background-color: var(--whiteTransparentButton);
+    border-radius: 3px;
+
+}
+
+.moviepresentation-button-wrapper button:nth-child(1) {
+    padding: 0 40px;
+}
+
+.moviepresentation-button-wrapper button:nth-child(2) {
+    padding: 0 25px;
+}
+
+
+#phoneview-information-text {
+    margin: 5px 10px;
+}
+
+#phoneview-information-stars {
+    margin: 50px 10px;
+}
