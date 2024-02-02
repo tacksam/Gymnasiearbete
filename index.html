@@ -12,10 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-    <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100;1,200;1,400&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +22,7 @@
     <title>Movie browse</title>
 </head>
 <body>
-    <!-- ----------------------- TOP NAV BAR -----------------------  -->
+    <!-- .......................... TOP NAV BAR ..........................  -->
     <header>
         <div id="phone-hamburger-menu">
             <div id="phone-hamburger-menu-content">
@@ -92,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <!-- ----------------------- BOTTOM NAV BAR -----------------------  -->
+            <!-- .......................... BOTTOM NAV BAR .......................... -->
 
 
             <div class="botnav">
@@ -111,8 +107,9 @@
     <div id="desktop-movie-holder">
         <div id="upper-desktop-movie-holder-wrapper">
             <button onclick="closePreview()" id="close-desktop-movie-preview-button"> <i id="close-desktop-movie-preview-button-icon" class="fa-solid fa-xmark"></i></button>
-            <div id="desktop-movie-info-container">
-                <div id="desktop-movie-logo">
+            <div id="flexcontainer">
+            <div class="desktop-movie-info-container">
+                <div class="desktop-movie-logo">
                     <img id="desktop-movie-logo-image-preview" src="images/joker.png" alt="movie logo">
                 </div>
                 <h1 id="desktop-movie-title-preview">put on a happy face</h1>
@@ -123,28 +120,29 @@
                     <li>|</li>
                     <li id="movie-categoryThree-preview">horror</li>
                 </ul>
-                <a id="p-lay"href="teinf21video/bonjourmadame.html"><button id="play-button-desktop-movie-preview"><i class="fa-solid fa-play"></i><h2>play</h2></button></a>
+                <a id="play-button-desktop-movie-preview" href="teinf21video/bonjourmadame.html"><i class="fa-solid fa-play"></i>PLAY</a>
             </div>
         </div>
+        </div>
         <div id="desktop-movie-infotext-container">
-            <span><p id="desktop-movie-info-paragraph-one"></p>
-                <p id="desktop-movie-info-paragraph-two"></p></span>
+                <span id="desktop-movie-info-paragraph-one"></span>
+                <span id="desktop-movie-info-paragraph-two"></span>
         </div>
         <div class="moviescontainer movies-alike-container">
-            <label for="movies-alike" class="categoryname">Movies alike</label>
+            <h1 class="categoryname">Movies alike</h1>
             <div id="movies-alike" class="moviecontainer scroll-snap">
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
-                <div class="movie movie-alike" id="movie1"></div>
+                <div class="movie movie-alike" id="movieone"></div>
+                <div class="movie movie-alike" id="movietwo"></div>
+                <div class="movie movie-alike" id="movie3"></div>
+                <div class="movie movie-alike" id="movie4"></div>
+                <div class="movie movie-alike" id="movie5"></div>
+                <div class="movie movie-alike" id="movie6"></div>
+                <div class="movie movie-alike" id="movie7"></div>
+                <div class="movie movie-alike" id="movie8"></div>
+                <div class="movie movie-alike" id="movie9"></div>
+                <div class="movie movie-alike" id="movie10"></div>
+                <div class="movie movie-alike" id="movie11"></div>
+                <div class="movie movie-alike" id="movie12"></div>
 
             </div>
         </div>
@@ -153,11 +151,11 @@
 
     <main onclick="changeVal(putOnAHappyFace)">
         <hr>
-        <!-- ----------------------- MOVIE POSTER -----------------------  -->
+        <!-- .......................... MOVIE POSTER ..........................  -->
         <div id="movieposter"></div>
         <!-- detta ska kunna ändras med java  -->
-        <div id="desktop-movie-info-container">
-            <div id="desktop-movie-logo">
+        <div class="desktop-movie-info-container">
+            <div class="desktop-movie-logo">
                 <img src="images/joker.png" alt="movie logo">
             </div>
             <h1 id="desktop-movie-title">put on a happy face</h1>
@@ -172,45 +170,45 @@
     </main>
     <footer>
         <div class="moviescontainer">
-            <label for="horrorcategory" class="categoryname">Horror</label>
+            <h1 class="categoryname">Horror</h1>
             <div id="horrorcategory" class="moviecontainer scroll-snap">
                 <div onclick="changeVal(bonjourMadame)" class="movie" id="movie1">
-                    <img src="/images/teinf21/teinf21poster.jpg" alt="thumbnail">
+                    <a href="#"></a>
                 </div> 
-                <div onclick="changeVal(inception)" class="movie" id="movie1">
-                    <img src="images/inception/inceptionposter.jpg" alt="thumbnail">
+                <div onclick="changeVal(inception)" class="movie" id="movie2">
+                    <a href="#"></a>
                 </div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
+                <div class="movie" id="movie13"></div>
+                <div class="movie" id="movie14"></div>
+                <div class="movie" id="movie15"></div>
+                <div class="movie" id="movie16"></div>
+                <div class="movie" id="movie17"></div>
+                <div class="movie" id="movie18"></div>
+                <div class="movie" id="movie19"></div>
+                <div class="movie" id="movie20"></div>
+                <div class="movie" id="movie21"></div>
+                <div class="movie" id="movie22"></div>
+                <div class="movie" id="movie23"></div>
+                <div class="movie" id="movie24"></div>
             </div>
         </div>
         <div class="moviescontainer">
-            <label for="thrillercategory" class="categoryname">Thriller</label>
+            <h1 class="categoryname">Thriller</h1>
             <div id="thrillercategory" class="moviecontainer scroll-snap">
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
-                <div class="movie" id="movie1"></div>
+                <div class="movie" id="movie25"></div>
+                <div class="movie" id="movie26"></div>
+                <div class="movie" id="movie27"></div>
+                <div class="movie" id="movie28"></div>
+                <div class="movie" id="movie29"></div>
+                <div class="movie" id="movie30"></div>
+                <div class="movie" id="movie31"></div>
+                <div class="movie" id="movie32"></div>
+                <div class="movie" id="movie33"></div>
+                <div class="movie" id="movie34"></div>
+                <div class="movie" id="movie35"></div>
+                <div class="movie" id="movie36"></div>
+                <div class="movie" id="movie37"></div>
+                <div class="movie" id="movie38"></div>
             </div>
         </div>
     </footer>
@@ -222,7 +220,3 @@
 </body>
 
 </html>
-
-<script>
-
-</script>

@@ -6,15 +6,21 @@
     <script src="https://kit.fontawesome.com/b9bbadaa1e.js" crossorigin="anonymous"></script>
     <title>Bonjour Madame Music Video</title>
     <link rel="stylesheet" href="bonjourmadame.css">
+    <link
+    href="https://unpkg.com/video.js@7/dist/video-js.min.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
     <!-- <header><a href="/index.html"></a><i class="fa-solid fa-arrow-left"></i></a></header> -->
-    <header><a href="/index.html"><button><i class="fa-solid fa-arrow-left"></i></button></a></header>
+    <header><a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a></header>
     <div>
-    <video controls>
-    <h2>hej jag heter ivar vad heter du</h2>
-        <source src="TeInf 21 - Bonjour Madame (Official Music Video).mp4" type="video/mp4">
-    </video>
+        <video src="my-video" class="video-js" data-setup="{}" controls autoplay>
+            <source src="/teinf21video/test.mp4" type="video/mp4">
+          </video>
+        
+          <script src="https://vjs.zencdn.net/8.9.0/video.min.js"></script>
+        </body>
 </div>
 </body>
 </html>

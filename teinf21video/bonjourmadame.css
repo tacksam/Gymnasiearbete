@@ -2,9 +2,6 @@ body{
     background-color: black;
 }
 
-header{
-    
-}
 div{
     display: flex;
     align-items: center;
@@ -27,3 +24,4 @@ button{
     background-color: transparent;
     border: none;
 }
+

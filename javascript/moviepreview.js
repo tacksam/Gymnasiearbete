@@ -6,7 +6,7 @@ var tDescOne = document.getElementById("desktop-movie-info-paragraph-one");
 var tDescTwo = document.getElementById("desktop-movie-info-paragraph-two");
 var tMoviePosterText = document.getElementById("desktop-movie-logo-image-preview");
 var tMoviePosterBackground = document.getElementById("upper-desktop-movie-holder-wrapper");
-var tLink = document.getElementById("p-lay");
+var tLink = document.getElementById("play-button-desktop-movie-preview");
 
 // Movie declaration
 const putOnAHappyFace = {
@@ -49,10 +49,13 @@ const bonjourMadame = {
 // function
 
 function closePreview(){
-    document.getElementById("desktop-movie-holder").style.transform = "scale(0)"
+    document.getElementById("desktop-movie-holder").style.transform = "scale(0)";
+    document.getElementById("test").style.display = "none";
 }
 function openPreview(){
     document.getElementById("desktop-movie-holder").style.transform = "scale(1)"
+    document.getElementById("test").style.display = "block";
+    document.getElementById("desktop-movie-holder").style.display = "block";
 }
 
 function changeVal(movie) {
@@ -62,14 +65,12 @@ function changeVal(movie) {
     tMovieGenreThree.innerHTML = movie.genreThree;
     tMoviePosterBackground.style.backgroundImage = movie.moviePoster;
     tMoviePosterText.src = movie.moviePosterText;
-    tLink.href = movie.link;
+    tLink.href = movie.link; 
 
-    // Dela upp descText vid det sista mellanslaget inom den första halvan
     const descLength = movie.descText.length;
     const halfLength = Math.ceil(descLength / 2);
     const lastSpaceIndex = movie.descText.lastIndexOf(' ', halfLength);
 
-    // Om inget mellanslag hittas inom den första halvan, använd det sista mellanslaget i hela descText
     const splitIndex = lastSpaceIndex !== -1 ? lastSpaceIndex : movie.descText.lastIndexOf(' ');
 
     const firstHalf = movie.descText.substring(0, splitIndex);
@@ -82,3 +83,4 @@ function changeVal(movie) {
 }
 
 
+document.getElementById("test").style.display = "none"

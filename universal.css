@@ -24,7 +24,7 @@ hr {
 
 
 
-p, h1, h2, h3, h4, h5,button{
+p, h1, h2, h3, h4, h5,button,span{
     font-family: 'Poppins', sans-serif;
     color: white;
 }
