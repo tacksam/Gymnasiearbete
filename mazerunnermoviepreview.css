@@ -1,6 +1,6 @@
 /* ----------------------- TOP NAV BAR ----------------------- */
 html {
-    background-image: url("/bilder/MazeRunner-2014-1.jpg");
+    background-image: url("/images/background.png");
 }
 
 #searchbar {
@@ -161,15 +161,22 @@ html {
 
 
 /*  ----------------------- MOVIEW PREVIEW -----------------------*/
-
-#movieholder {
-    width: 100vh;
-    height: 250px;
-    background-color: aqua;
+.video-js {
+    width: 100vw;
 }
+
+#movie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {}
 
 #moviepresentation {
     background-color: var(--blackTransparentButton);
+    margin: 0 20%;
+
 }
 
 #moviepresentation ul {
@@ -212,16 +219,17 @@ main ul {
 }
 
 .moviepresentation-button-wrapper button:nth-child(1) {
-    padding: 0 40px;
+    width: 65%;
 }
 
 .moviepresentation-button-wrapper button:nth-child(2) {
-    padding: 0 25px;
+    width: 30%;
 }
 
 
 #phoneview-information-text {
     margin: 5px 10px;
+    display: flex;
 }
 
 #phoneview-information-stars {
